@@ -2,7 +2,7 @@ extends Node
 
 signal music_changed(stream: AudioStream)
 
-const SETTINGS_PREFIX := "audio/sound_manager/"
+const SETTINGS_PREFIX := "tab_plugins/sound_manager/"
 const SETTINGS: Dictionary[String, Variant] = {
 	"music_bus": "Music",
 	"sfx_bus": "SFX",
@@ -48,7 +48,7 @@ func _init() -> void:
 func _ready() -> void:
 	for bus in [master_bus, music_bus, sfx_bus]:
 		if AudioServer.get_bus_index(bus) == -1:
-			push_warning("SoundManager: audio bus '%s' not found, sounds will play on Master. Check Project Settings > Audio > Sound Manager." % bus)
+			push_warning("SoundManager: audio bus '%s' not found, sounds will play on Master. Check Project Settings > Tab Plugins > Sound Manager." % bus)
 
 
 # --- Music ---

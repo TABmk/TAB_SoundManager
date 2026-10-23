@@ -31,7 +31,7 @@ is missing — sounds then play on `Master`.
 
 ## 2) Settings
 
-**Project Settings > Audio > Sound Manager** (`audio/sound_manager/*`):
+**Project Settings > Tab Plugins > Sound Manager** (`tab_plugins/sound_manager/*`):
 
 | Setting | Default | Description |
 |---|---|---|
